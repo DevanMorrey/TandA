@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,12 +13,39 @@ namespace TandA
 
         public static string ExtractCommand(string line)
         {
-            return "";
+            //Find command of use input
+            int index = line.IndexOf(' ');
+
+            if (index == -1)
+            {
+                return line;
+            }
+            else
+            {
+                return line.Substring(0, index);
+            }
+            
         }
 
-        public static string ExtractArgument()
+        public static string ExtractArgument(string line)
         {
-            return "";
+            // Find argument of user input
+            int index = line.IndexOf(' ');
+
+            if (index == -1)
+            {
+                return "";
+            }
+            else
+            {
+                return line.Substring(index + 1, line.Length - index -1);
+            }
+        }
+
+        public static string WordWrap(string text, int bufferWidth)
+        {
+            //TODO: Word wrap
+            return text;
         }
     }
 }
