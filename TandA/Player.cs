@@ -13,6 +13,29 @@ namespace TandA
         public static int LocY { get; private set; }
         public static List<Item> Inventory { get; set; }
 
-        
+        public static void Move(string direction)
+        {
+
+        }
+
+        public static void GetCurrentRoom()
+        {
+
+        }
+
+        public static void PickUpItem(String itemName)
+        {
+
+        }
+
+        public static void DropItem(String itemName)
+        {
+
+        }
+
+        public static void DisplayInventory()
+        {
+
+        }
     }
 }

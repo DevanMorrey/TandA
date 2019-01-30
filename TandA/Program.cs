@@ -16,7 +16,13 @@ namespace TandA
             //Console.WriteLine(TextUtil.ExtractArgument("get door"));
             GameManager.ShowTitleScreen();
 
-            
+            //Game loop
+
+            while (!quite)
+            {
+                //Get user input and read into game
+                CommandProcessor.ProcessCommand(Console.ReadLine());
+            }
         }
     }
 }

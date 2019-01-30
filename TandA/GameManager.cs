@@ -19,6 +19,9 @@ namespace TandA
 
         //EndGame()
 
-        //ApplyRules()
+        public static void ApplyRules()
+        {
+
+        }
     }
 }
