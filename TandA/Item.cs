@@ -8,5 +8,13 @@ namespace TandA
 {
     class Item
     {
+        
+
+        public void whereIsItem(string item)
+        {
+            
+            // for each item in room array search item against them
+
+        }
     }
 }

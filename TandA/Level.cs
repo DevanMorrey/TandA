@@ -8,7 +8,7 @@ namespace TandA
 {
     static class Level
     {
-
+        
         //Initialize()
 
         //BuildLevel()
