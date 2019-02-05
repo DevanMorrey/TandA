@@ -8,7 +8,11 @@ namespace TandA
 {
     static class Level
     {
-        
+        //Variables
+
+        //Properties
+        public static Room[,] Rooms { get; private set; }
+
         //Initialize()
 
         //BuildLevel()

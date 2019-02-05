@@ -9,10 +9,22 @@ namespace TandA
 {
     static class Player
     {
-        public static int LocX { get; private set; }
-        public static int LocY { get; private set; }
-        public static List<Item> Inventory { get; set; }
 
+        //Properites
+        public static int PosX { get; private set; }
+        public static int PosY { get; private set; }
+        public static List<Item> InventoryItems { get; private set; }
+        public static int Moves { get; private set; } = 0;
+        private static int WeightCapacity = 6;
+
+        public static int InventoryWeight
+        {
+            get
+            { //TODO: finish inventory weight caluation
+                return 0; }
+        }
+
+        //Public Methods
         public static void Move(string direction)
         {
 
@@ -37,5 +49,11 @@ namespace TandA
         {
 
         }
+        
+        public static void GetInventoryItem()
+        {
+
+        }
+
     }
 }
