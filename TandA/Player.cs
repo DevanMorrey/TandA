@@ -30,9 +30,9 @@ namespace TandA
 
         }
 
-        public static void GetCurrentRoom()
+        public static Room GetCurrentRoom()
         {
-
+            return null;
         }
 
         public static void PickUpItem(String itemName)
@@ -50,9 +50,9 @@ namespace TandA
 
         }
         
-        public static void GetInventoryItem()
+        public static Item GetInventoryItem(string itemName)
         {
-
+            return null;
         }
 
     }

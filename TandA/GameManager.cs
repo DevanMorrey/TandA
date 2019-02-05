@@ -15,9 +15,12 @@ namespace TandA
         }
 
         //StartGame()
-        
 
-        //EndGame()
+
+        public static void EndGame()
+        {
+            Program.quite = true;
+        }
 
         public static void ApplyRules()
         {

@@ -19,30 +19,57 @@ namespace TandA
 
         public List<Item> Items { get;private set; }
 
-        
-        
+
+        #region Public Methods
         // Public Methods
 
-        //Describe()
+        public void Describe()
+        {
 
-        //ShowTitle()
+        }
 
-        //GetItem()
+        public void ShowTitle()
+        {
 
-        //AddExit()
+        }
 
-        //RemoveExit()
+        public Item GetItem(string itemName)
+        {
+            return null;
+        }
 
-        //CanExit()
+        public void AddExit(string direction)
+        {
 
+        }
+
+        public void RemoveExit(string direction)
+        {
+
+        }
+
+        public bool CanExit(string direction)
+        {
+            return false;
+        }
+        #endregion
 
         // Private Methods
 
-        //GetItemList()
+        private string GetItemList()
+        {
+            return "";
+        }
 
-        //GetExitList()
+        private string GetExitList()
+        {
+            return "";
+        }
 
-        //GetCoordinates()
+        private string GetCoordinates()
+        {
+            return "";
+        }
 
     }
 }
