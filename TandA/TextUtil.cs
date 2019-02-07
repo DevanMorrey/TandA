@@ -47,5 +47,16 @@ namespace TandA
             //TODO: Word wrap
             return text;
         }
+
+        public static string SubTitleFormat(string message)
+        {
+            string underline = "";
+            string output = "";
+
+            underline.PadLeft(message.Length, '-');
+            output = message + ": \n" + underline + "\n";
+
+            return output;
+        }
     }
 }
